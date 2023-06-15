@@ -1,0 +1,51 @@
+{
+  "name": "react-parcel-template",
+  "version": "1.0.0",
+  "description": "This package is pre-built for react via parcel.",
+  "author": "reytee",
+  "private": true,
+  "source": [
+    "src/index.html"
+  ],
+  "alias": {
+    ":src": "./src/"
+  },
+  "scripts": {
+    "prestart": "npm run clean-dist",
+    "start": "parcel --public-url /static --port 8989",
+    "build": "parcel build --no-content-hash --dist-dir build",
+    "watch": "parcel watch",
+    "clean-dist": "rm ./dist/* -r -f",
+    "clean-cache": "rm ./.parcel-cache/* -r -f",
+    "clean-build": "rm /build -rf",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [
+    "react with parcel",
+    "react",
+    "react template",
+    "react typescript",
+    "react built-in",
+    "react 18"
+  ],
+  "staticFiles": {
+    "staticPath": "public"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.7.0",
+    "@parcel/resolver-glob": "^2.7.0",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "parcel-reporter-static-files-copy": "^1.4.0",
+    "process": "^0.11.10",
+    "rimraf": "^3.0.2"
+  }
+}

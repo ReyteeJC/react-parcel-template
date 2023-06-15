@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "target": "ESNext",
+        "jsx": "react",
+        "moduleResolution": "Node",
+        "jsxImportSource": "react",
+        "skipDefaultLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "baseUrl": ".",
+        "paths": {
+            ":src/": ["./src/"],
+            ":src/*": ["./src/*"]
+        }
+    },
+
+    // "include": [
+    //     "src/**.*"
+    // ]
+
+}
